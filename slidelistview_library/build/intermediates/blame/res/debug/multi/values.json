@@ -1,0 +1,64 @@
+[
+    {
+        "outputFile": "E:\\code\\Android\\other\\Glossary\\slidelistview_library\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 643,
+                    "endColumn": 48,
+                    "endOffset": 687
+                },
+                "from": {
+                    "file": "E:\\code\\Android\\other\\Glossary\\slidelistview_library\\src\\main\\res\\values\\attrs.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 656,
+                        "endColumn": 48,
+                        "endOffset": 700
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 692,
+                    "endColumn": 52,
+                    "endOffset": 740
+                },
+                "from": {
+                    "file": "E:\\code\\Android\\other\\Glossary\\slidelistview_library\\src\\main\\res\\values\\attrs.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 706,
+                        "endColumn": 52,
+                        "endOffset": 754
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 745,
+                    "endColumn": 53,
+                    "endOffset": 794
+                },
+                "from": {
+                    "file": "E:\\code\\Android\\other\\Glossary\\slidelistview_library\\src\\main\\res\\values\\attrs.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 760,
+                        "endColumn": 53,
+                        "endOffset": 809
+                    }
+                }
+            }
+        ]
+    }
+]

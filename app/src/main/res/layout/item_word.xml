@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_note_h"
+    android:orientation="horizontal"
+    android:padding="@dimen/item_pad">
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="glossary"
+        android:textColor="@color/textcolor_gray_3"
+        android:textSize="@dimen/textsize_normal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_arrow_right"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_part_of_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:lines="1"
+        android:text="adj."
+        android:textColor="@color/textcolor_gray_6"
+        android:textSize="@dimen/textsize_small" />
+
+    <TextView
+        android:id="@+id/tv_chinese_expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:lines="1"
+        android:layout_toRightOf="@id/tv_part_of_speech"
+        android:text="开放的攻击力lskjg了司空见惯"
+        android:textColor="@color/textcolor_gray_6"
+        android:textSize="@dimen/textsize_small" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/item_pad">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" glossary"
+        android:textColor="@color/textcolor_gray_3"
+        android:textSize="@dimen/textsize_title" />
+
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="@dimen/item_pad"
+        android:lines="1"
+        android:text="Codes 22"
+        android:textColor="@color/textcolor_gray_6"
+        android:textSize="@dimen/textsize_normal" />
+
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/item_pad"
+        android:text="repo"
+        android:textColor="@color/textcolor_red"
+        android:textSize="@dimen/textsize_normal"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="@dimen/item_pad"
+        android:text="search"
+        android:textColor="@color/textcolor_red"
+        android:textSize="@dimen/textsize_normal"
+
+        />
+
+</RelativeLayout>

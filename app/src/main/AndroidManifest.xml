@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tonglu.glossary.glossary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".view.GlossaryApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".view.activity.ContextActivity" />
+        <activity android:name=".view.activity.NoteContentActivity" />
+        <activity android:name=".view.activity.BigBangActivity" />
+        <activity android:name=".view.activity.NoteEditActivity" />
+        <activity android:name=".view.activity.ContextEditActivity" />
+        <activity android:name=".view.activity.WordsDetailActivity" />
+        <activity android:name=".view.activity.WordsEditActivity" />
+        <activity android:name=".view.activity.SearchCodeActivity" />
+        <activity android:name=".view.activity.SearchCodeDetailActivity" />
+        <activity android:name=".view.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.WordsAddActivity"></activity>
+    </application>
+
+</manifest>

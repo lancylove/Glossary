@@ -1,0 +1,34 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="rb_padding">1.0dip</dimen>
+
+    <!-- 文字 -->
+    <dimen name="textsize_actiobbar">18sp</dimen>
+    <dimen name="textsize_title">16sp</dimen>
+    <dimen name="textsize_normal">14sp</dimen>
+    <dimen name="textsize_hint">12sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="textsize_smaller">10sp</dimen>
+    <dimen name="textsize_smallest">8sp</dimen>
+
+    <!--标题栏 -->
+    <dimen name="title_height">50.0dip</dimen>
+    <dimen name="title_btn_pad1">5.0dip</dimen>
+    <dimen name="title_btn_pad2">10.0dip</dimen>
+
+    <!-- 列表 -->
+    <dimen name="item_note_h">60.0dp</dimen>
+    <dimen name="item_context_h">50.0dp</dimen>
+    <dimen name="item_edit">30.0dp</dimen>
+    <dimen name="item_big_edit_h">100.0dp</dimen>
+    <dimen name="item_pad">10.0dp</dimen>
+    <dimen name="word_edit_w">240.0dp</dimen>
+
+    <dimen name="word_tag_w">50dp</dimen>
+
+    <dimen name="line_h">0.5dip</dimen>
+
+</resources>

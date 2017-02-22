@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.tonglu.glossary.glossary.view.activity.BigBangActivity">
+
+    <include layout="@layout/title_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D6E1F1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/edit_chinese"
+            android:layout_width="300dp"
+            android:layout_height="@dimen/item_edit"
+            android:background="@drawable/item_white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edit_english"
+            android:layout_width="300dp"
+            android:layout_height="@dimen/item_edit"
+            android:background="@drawable/item_white"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="@dimen/item_edit"
+            android:layout_marginTop="5dp"
+            android:background="@color/titlecolor"
+            android:text="生产词条"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="#D6E1F1">
+
+        <com.tonglu.glossary.glossary.view.widget.AutoExpandLinearLayout
+            android:id="@+id/auto_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp">
+
+
+        </com.tonglu.glossary.glossary.view.widget.AutoExpandLinearLayout>
+    </ScrollView>
+</LinearLayout>

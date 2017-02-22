@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.tonglu.glossary.glossary.view.activity.ContextActivity">
+
+    <include layout="@layout/title_main" />
+
+    <com.roamer.slidelistview.SlideListView
+
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/slidelistview_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/activity_vertical_margin"
+        app:slideMode="right"
+        app:slideAnimationTime="200"
+        app:slideRightAction="scroll"
+
+        />
+
+</LinearLayout>

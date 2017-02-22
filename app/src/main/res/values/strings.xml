@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Glossary</string>
+
+
+    <string name="loading">数据加载中...</string>
+    <string name="update">正在提交...</string>
+    <string name="logining">登录中...</string>
+    <string name="null_note">尚无笔记</string>
+    <string name="null_context">尚无上下文</string>
+    <string name="null_word">尚无词汇</string>
+    <string name="null_code">未查询到相关代码</string>
+
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登 录</string>
+    <string name="action_sign_in_short">登 录</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">不能为空</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+</resources>

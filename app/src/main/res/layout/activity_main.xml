@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textcolor_gray_c"
+        android:gravity="center"
+        android:orientation="horizontal"
+       >
+
+
+        <RadioButton
+            style="@style/nav_radio_button_style"
+            android:text="笔记" />
+
+        <RadioButton
+            style="@style/nav_radio_button_style"
+
+            android:text="词汇" />
+
+        <RadioButton
+            style="@style/nav_radio_button_style"
+            android:text="我" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

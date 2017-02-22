@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_context_h"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/cb_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_context_h"
+        android:background="@drawable/checkbox_selector"
+        android:gravity="center"
+        android:text="tagsname"
+        android:textColor="@color/textcolor_gray_3"
+        android:textSize="@dimen/textsize_title" />
+
+
+</LinearLayout>

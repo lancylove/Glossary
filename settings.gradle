@@ -1,0 +1,1 @@
+include ':app', ':slidelistview_library', ':oldninedroid_library'

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_context_h"
+    android:background="@drawable/item_border"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="词汇表"
+        android:textColor="@color/textcolor_gray_3"
+        android:textSize="@dimen/textsize_title" />
+
+
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.tonglu.glossary.glossary.view.activity.WordsEditActivity">
+
+    <include layout="@layout/title_main" />
+
+
+    <TextView
+        android:id="@+id/tv_expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="Glossary"
+        android:textColor="@color/textcolor_gray_3"
+        android:textSize="@dimen/textsize_title"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_part_of_speech"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/word_tag_w"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="词性"
+            android:textColor="@color/textcolor_gray_3"
+            android:textSize="@dimen/textsize_title" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/word_tag_w">
+
+
+        <TextView
+            android:id="@+id/tv_adj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:paddingLeft="@dimen/item_pad"
+            android:paddingRight="@dimen/item_pad"
+            android:text="adj."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_normal" />
+
+        <TextView
+            android:id="@+id/tv_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_pad"
+            android:background="@drawable/button_selector"
+            android:paddingLeft="@dimen/item_pad"
+            android:paddingRight="@dimen/item_pad"
+            android:text="v."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_normal" />
+
+        <TextView
+            android:id="@+id/tv_adv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_pad"
+            android:background="@drawable/button_selector"
+            android:paddingLeft="@dimen/item_pad"
+            android:paddingRight="@dimen/item_pad"
+            android:text="adv."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_normal" />
+
+        <TextView
+            android:id="@+id/tv_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_pad"
+            android:background="@drawable/button_selector"
+            android:paddingLeft="@dimen/item_pad"
+            android:paddingRight="@dimen/item_pad"
+            android:text="n."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_normal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="@dimen/word_tag_w"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingTop="@dimen/item_pad"
+            android:text="标签"
+            android:textColor="@color/textcolor_gray_3"
+            android:textSize="@dimen/textsize_title" />
+
+        <LinearLayout
+            android:id="@+id/ll_tags"
+            android:layout_width="@dimen/word_edit_w"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_add_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/item_pad"
+                android:src="@mipmap/ic_plus"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_chinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="@dimen/word_tag_w"
+            android:layout_height="wrap_content"
+            android:text="中文"
+            android:textColor="@color/textcolor_gray_3"
+            android:textSize="@dimen/textsize_title" />
+
+        <EditText
+            android:id="@+id/edit_chinese"
+            android:layout_width="@dimen/word_edit_w"
+            android:layout_height="@dimen/item_edit"
+            android:background="@drawable/item_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/textcolor_gray_3"
+            android:textSize="@dimen/textsize_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_definition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="@dimen/word_tag_w"
+            android:layout_height="wrap_content"
+
+            android:text="定义"
+            android:textColor="@color/textcolor_gray_3"
+            android:textSize="@dimen/textsize_title" />
+
+        <EditText
+            android:id="@+id/edit_definition"
+            android:layout_width="@dimen/word_edit_w"
+            android:layout_height="@dimen/item_big_edit_h"
+            android:background="@drawable/item_border"
+            android:gravity="top"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/textcolor_gray_3"
+            android:textSize="@dimen/textsize_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>
