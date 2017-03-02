@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.tonglu.glossary.glossary.R;
@@ -78,8 +80,10 @@ public class BigBangActivity extends BaseActivity implements BigBangInterface {
     }
 
     @Override
-    public void showPopView(BangWordView v, FanyiBean result) {
-        View view = LayoutInflater.from(context).inflate(R.layout.pop_fanyi, null);
+    public void showPopView(final BangWordView anchorView, FanyiBean result) {
+        final View view = LayoutInflater.from(context).inflate(R.layout.pop_fanyi, null);
+        mPopupWindow = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
+
         AutoExpandLinearLayout fanyiLayout = (AutoExpandLinearLayout) view.findViewById(R.id.auto_layout_fanyi);
 
         ArrayList<String> fanyi = new ArrayList<>();
@@ -116,9 +120,15 @@ public class BigBangActivity extends BaseActivity implements BigBangInterface {
             });
 
         }
+        view.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+// 自动调整箭头的位置
+                autoAdjustArrowPos(mPopupWindow, view, anchorView);
+                view.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+            }
+        });
 
-
-        mPopupWindow = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
         mPopupWindow.setBackgroundDrawable(new BitmapDrawable());
         mPopupWindow.setOutsideTouchable(true);
         WindowManager.LayoutParams params = getWindow().getAttributes();
@@ -132,10 +142,25 @@ public class BigBangActivity extends BaseActivity implements BigBangInterface {
                 getWindow().setAttributes(params);
             }
         });
-        mPopupWindow.showAsDropDown(v, v.getLayoutParams().width / 2, 0);
+        mPopupWindow.showAsDropDown(anchorView, anchorView.getLayoutParams().width / 2, 0);
 
 
     }
+    private void autoAdjustArrowPos(PopupWindow popupWindow, View contentView, View anchorView) {
+        View upArrow = contentView.findViewById(R.id.iv_triangle);
+
+        int pos[] = new int[2];
+        contentView.getLocationOnScreen(pos);
+        int popLeftPos = pos[0];
+        anchorView.getLocationOnScreen(pos);
+        int anchorLeftPos = pos[0];
+        int arrowLeftMargin = anchorLeftPos - popLeftPos + anchorView.getWidth() / 2 - upArrow.getWidth() / 2;
+        RelativeLayout.LayoutParams upArrowParams = (RelativeLayout.LayoutParams) upArrow.getLayoutParams();
+        upArrowParams.leftMargin = arrowLeftMargin;
+
+    }
+
+
 
     private void setBangClick() {
         int count = autoExpandLinearLayout.getChildCount();
